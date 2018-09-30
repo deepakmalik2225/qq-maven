@@ -30,14 +30,36 @@ def findDistribution(num_w, num_f):
     ##################################
     ##          FILL ME IN          ##
     ##################################
+   int A[num_w];
+     if(num_w%2==0)
+    {
+        for(int i=1; i<(num_w/2);i++)
+        {A[2*i]=1;
+         A[0]=num_f-(num_w/2) + 1;
+        }
+        
+    }
+       else
+        {
+            int x;
+            x=num/2;
+            for (int i=1; i <(num_w/2)+1; i++)
+            {{A[2*i]=1;
+              A[0]=num_f-(num_w/2);
+             }         
+          }
+      tuple <int, int> tup;  
+      tup = make_tuple(1,A);
+       return tup;
 
+
+                
     ## IF YOU WISH TO MAKE ANY SPECIFIC LIBRARY IMPORTS ##
     ## PLEASE PUT THEM IN THE BODY OF THE FUNCTION ##
     ## LIKE SO: import pdb; pdb.set_trace()
 
     # return a tuple, for details of the return value please refer
     # to the problem statement.
-    return (2, [-1,2,0])
 
 def ensureNumbers(returnTuple):
     if type(returnTuple[0]) is int:
