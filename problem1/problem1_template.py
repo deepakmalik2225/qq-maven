@@ -30,8 +30,20 @@ CURRENT_T = 0
 INPUT_P = 0
 
 def buyCondition(total_t, current_t, input_p):
-    ##################################
-    ##          FILL ME IN          ##
+    for(int i=0;i<total_t;i++)
+    { int A[99];
+     for (int k=0;k<100;k++){
+         A[k]=(pow((101-i)/100),k) -(pow(((100-i)/100),k));
+         int exp;
+         exp=min(A);
+     }
+    }
+    if(input_p<exp){
+
+
+##################################
+    ##          FILL ME IN 
+  
     ##################################
 
     ## IF YOU WISH TO MAKE ANY SPECIFIC LIBRARY IMPORTS ##
@@ -39,7 +51,8 @@ def buyCondition(total_t, current_t, input_p):
     ## LIKE SO: import pdb; pdb.set_trace()
 
     # return a boolean
-    return True
+    return True;
+    }
 
 def expectedValue(total_t):
     ##################################
